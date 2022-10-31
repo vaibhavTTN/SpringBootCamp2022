@@ -1,0 +1,18 @@
+All The Read and Write Operation of Mapping is Done in Test File;
+
+Q8. Which method on the session object can be used to remove an object from the cache?
+    =>  First-level cache always Associates with the Session object.
+        Hibernate uses this cache by default. Here, it processes one transaction after another one,
+        means wont process one transaction many times.
+        Mainly it reduces the number of SQL queries it needs to generate within a given transaction.
+        That is instead of updating after every modification done in the transaction,
+        it updates the transaction only at the end of the transaction.
+        We can use session evict() method to remove a single object from the hibernate first level cache.
+
+Q9. What does @transactional annotation do?
+    =>  Spring creates proxies for all the classes annotated with @Transactional, either on the
+        class or on any of the methods. The proxy allows the framework to inject transactional logic before
+        and after the running method, mainly for starting and committing the transaction.Any self-invocation
+        calls will not start any transaction, even if the method has the @Transactional annotation.
+        Another caveat of using proxies is that only public methods should be annotated with @Transactional.
+        Methods of any other visibilities will simply ignore the annotation silently as these are not proxied.

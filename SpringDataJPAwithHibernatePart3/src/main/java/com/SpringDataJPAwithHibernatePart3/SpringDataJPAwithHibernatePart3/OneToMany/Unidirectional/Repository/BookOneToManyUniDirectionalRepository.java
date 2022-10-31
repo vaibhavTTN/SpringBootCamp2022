@@ -1,0 +1,7 @@
+package com.SpringDataJPAwithHibernatePart3.SpringDataJPAwithHibernatePart3.OneToMany.Unidirectional.Repository;
+
+import com.SpringDataJPAwithHibernatePart3.SpringDataJPAwithHibernatePart3.OneToMany.Unidirectional.Entity.BookOneToManyUniDirectional;
+import org.springframework.data.repository.CrudRepository;
+
+public interface BookOneToManyUniDirectionalRepository extends CrudRepository<BookOneToManyUniDirectional,Integer> {
+}

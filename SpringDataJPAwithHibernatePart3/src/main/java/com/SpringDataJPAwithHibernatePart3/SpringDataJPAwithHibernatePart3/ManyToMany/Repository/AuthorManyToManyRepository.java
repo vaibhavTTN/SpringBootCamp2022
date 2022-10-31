@@ -1,0 +1,7 @@
+package com.SpringDataJPAwithHibernatePart3.SpringDataJPAwithHibernatePart3.ManyToMany.Repository;
+
+import com.SpringDataJPAwithHibernatePart3.SpringDataJPAwithHibernatePart3.ManyToMany.Entity.AuthorManyToMany;
+import org.springframework.data.repository.CrudRepository;
+
+public interface AuthorManyToManyRepository extends CrudRepository<AuthorManyToMany,Integer> {
+}
