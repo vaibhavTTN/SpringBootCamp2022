@@ -1,0 +1,26 @@
+Use this database and run this query
+
+Create database security;
+use security;
+
+show tables;
+
+drop table Post;
+drop table User;
+drop table role;
+
+select * from role;
+select * from user;
+select * from coupon;
+select * from user_role;
+
+insert into role values(1,'ADMIN');
+insert into role values(2,'USER');
+
+insert into user(first_name,last_name,email,password) values ('john','ferguson','john@ferguson.com','$2a$10$YzcbPL.fnzbWndjEcRkDmO1E4vOvyVYP5kLsJvtZnR1f8nlXjvq/G');
+
+insert into user_role values(1,1);
+
+insert into coupon values(1,"SUPERSALE",10,"12/12/2022");
+
+
